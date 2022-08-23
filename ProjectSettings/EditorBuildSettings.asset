@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TheHouse.unity
+    guid: ca8dcf294065bba4cadadf5f32d36ad9
+  - enabled: 1
+    path: Assets/Scenes/TheRoad.unity
+    guid: f41564f99f6d32b4582b4c9cdce50f30
+  - enabled: 1
+    path: Assets/Scenes/TheMarket.unity
+    guid: 1a85ad4f5d0bb8542aff25715fee8372
+  - enabled: 1
+    path: Assets/Scenes/TheHouseNight.unity
+    guid: c5e77adc58fb8a9499c8a72011529024
   m_configObjects: {}
