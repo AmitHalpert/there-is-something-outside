@@ -8,10 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 368764479929935302}
+  - component: {fileID: 6762261394336271576}
   - component: {fileID: 3448500072962420090}
   - component: {fileID: 9020255685447728609}
   - component: {fileID: 2536427030151724201}
+  - component: {fileID: 2612227939249389771}
   m_Layer: 0
   m_Name: Door01
   m_TagString: Untagged
@@ -19,22 +20,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 83
   m_IsActive: 1
---- !u!4 &368764479929935302
-Transform:
+--- !u!224 &6762261394336271576
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6124344966072441852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 13.938549}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1563641589107974091}
   - {fileID: 7122516373524535747}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 541.35236, y: 346.43304}
+  m_SizeDelta: {x: 1054, y: 668}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &3448500072962420090
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -54,6 +61,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -98,12 +106,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8161670898622400657, guid: 5b7de892548834e3f8c53671f6cf5080, type: 3}
+--- !u!223 &2612227939249389771
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124344966072441852}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &3827398937831696749
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 368764479929935302}
+    m_TransformParent: {fileID: 6762261394336271576}
     m_Modifications:
     - target: {fileID: 2354974358103176870, guid: 1d2ffeee32ba148668228940cbf6f36d, type: 3}
       propertyPath: m_RootOrder
@@ -165,7 +194,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 368764479929935302}
+    m_TransformParent: {fileID: 6762261394336271576}
     m_Modifications:
     - target: {fileID: 2354974358103176870, guid: 1d2ffeee32ba148668228940cbf6f36d, type: 3}
       propertyPath: m_RootOrder
