@@ -16,13 +16,12 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private KeyCode openDoorKey = KeyCode.E;
 
     [SerializeField] private Image crosshair = null;
-
     private bool isCrosshairActive;
     private bool DoOnce;
 
     private const string interactableTag = "InteractiveObject";
 
-    
+
     void Update()
     {
         RaycastHit hit;
@@ -61,7 +60,7 @@ public class DoorRaycast : MonoBehaviour
 
     void crosshairChange(bool on)
     {
-        if(on && !DoOnce)
+        if (on && !DoOnce)
         {
             crosshair.color = Color.red;
         }

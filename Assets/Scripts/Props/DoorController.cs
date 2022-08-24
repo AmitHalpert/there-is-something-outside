@@ -11,22 +11,35 @@ public class DoorController : MonoBehaviour
     private bool doorOpen = false;
 
 
-    private void Awake()
+    private void Start()
     {
         doorAnim = gameObject.GetComponent<Animator>();
     }
 
     public void PlayAnimation()
     {
-        if (!doorOpen)
+
+        // checks if door is a scene portal (door without animations are portals)
+        if(doorAnim == null)
         {
             SceneManager.LoadScene("TheRoad", LoadSceneMode.Single);
-            doorOpen = true;
         }
         else
         {
-            doorOpen = false;
+            if (!doorOpen)
+            {
+
+                Debug.Log("OPEN");
+                doorAnim.Play("DoorOpen", 0, 0.0f);
+                doorOpen = true;
+
+            }
+            else
+            {
+                Debug.Log("DoorClose");
+                doorAnim.Play("DoorClose", 0, 0.0f);
+                doorOpen = false;
+            }
         }
     }
-
 }
